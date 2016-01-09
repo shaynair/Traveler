@@ -1,0 +1,136 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+                xmlns:tools="http://schemas.android.com/tools"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                tools:context=".main.UploadFragment">
+
+    <ScrollView
+        android:id="@+id/edit_form"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:fillViewport="true">
+
+        <RelativeLayout
+            android:id="@+id/in_edit_form"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+        </RelativeLayout>
+    </ScrollView>
+
+    <CheckedTextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/upload_user"
+        android:id="@+id/r_checkedTextView2"
+        android:checked="false"
+        android:layout_centerVertical="true"
+        android:layout_alignParentStart="true"/>
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/register_submit"
+        android:id="@+id/r_button"
+        android:onClick="uploadUser"
+        android:layout_below="@+id/spinner2"
+        android:layout_alignEnd="@+id/edit_form"
+        android:layout_alignParentStart="true"/>
+
+    <EditText
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:inputType="textPersonName"
+        android:hint="@string/upload_travel_def"
+        android:ems="10"
+        android:maxLines="1"
+        android:singleLine="true"
+        android:id="@+id/r_editText"
+        android:layout_below="@+id/r_checkedTextView"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentEnd="true"/>
+
+    <CheckedTextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/upload_travel"
+        android:id="@+id/r_checkedTextView"
+        android:checked="false"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentStart="true"/>
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/register_submit"
+        android:id="@+id/button3"
+        android:onClick="uploadTravel"
+        android:layout_below="@+id/spinner"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentEnd="true"/>
+
+    <EditText
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:inputType="textPersonName"
+        android:hint="@string/upload_user_def"
+        android:ems="10"
+        android:maxLines="1"
+        android:singleLine="true"
+        android:id="@+id/r_editText5"
+        android:layout_below="@+id/r_checkedTextView2"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentEnd="true"/>
+
+    <ScrollView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/scrollView"
+        android:fillViewport="true"
+        android:layout_alignParentStart="true"
+        android:layout_above="@+id/r_checkedTextView2"
+        android:layout_alignParentEnd="true"
+        android:layout_below="@+id/button3">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textAppearance="?android:attr/textAppearanceSmall"
+            android:id="@+id/textView"/>
+    </ScrollView>
+
+    <ScrollView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/scrollView2"
+        android:fillViewport="true"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentBottom="true"
+        android:layout_alignEnd="@+id/edit_form"
+        android:layout_below="@+id/r_button">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textAppearance="?android:attr/textAppearanceSmall"
+            android:id="@+id/textView3"/>
+    </ScrollView>
+
+    <Spinner
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/spinner"
+        android:layout_below="@+id/r_editText"
+        android:layout_alignParentStart="true"
+        android:spinnerMode="dialog"/>
+
+    <Spinner
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/spinner2"
+        android:spinnerMode="dialog"
+        android:layout_below="@+id/r_editText5"
+        android:layout_alignParentStart="true"/>
+
+</RelativeLayout>

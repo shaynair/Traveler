@@ -1,0 +1,4 @@
+489,2016-09-09 09:09,2016-09-09 13:27,FlightsRUs,Chicago,Los Angelos,300.99,8
+490,2016-09-30 22:40,2016-10-01 01:59,Go Airline,New York,Boston,532.00,4
+102,2016-09-30 16:43,2016-09-30 17:15,FlightsRUs,New York,Chicago,290.50,0
+103,2016-09-30 16:37,2016-09-30 17:22,Go Airline,New York,Chicago,290.00,20

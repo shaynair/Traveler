@@ -1,0 +1,77 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools" android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    tools:context=".view.UserViewFragment">
+
+    <Space
+        android:id="@+id/space_1"
+        android:layout_width="1dp"
+        android:layout_height="20dp"
+        />
+
+    <TextView
+        android:id="@+id/name"
+        android:text="@string/user_name"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceLarge"
+        android:layout_alignParentStart="true"/>
+
+    <TextView
+        android:id="@+id/address"
+        android:text="@string/user_address"
+        android:layout_width="wrap_content"
+        android:gravity="end"
+        android:layout_height="wrap_content"
+        android:layout_alignBottom="@+id/space_1"
+        android:layout_alignParentEnd="true"/>
+
+    <TextView
+        android:id="@+id/email"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/user_email"
+        android:layout_below="@+id/name"/>
+
+    <TextView
+        android:id="@+id/credit_card"
+        android:layout_width="wrap_content"
+        android:gravity="end"
+        android:layout_height="wrap_content"
+        android:text="@string/user_credit"
+        android:layout_below="@id/address"
+        android:layout_alignParentEnd="true"/>
+
+    <Space
+        android:id="@+id/space_2"
+        android:layout_width="1dp"
+        android:layout_height="20dp"
+        android:layout_below="@+id/email"/>
+
+    <TextView
+        android:id="@+id/expiry"
+        android:text="@string/user_expiry"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/credit_card"
+        android:layout_alignParentEnd="true"/>
+
+    <TextView
+        android:id="@+id/booked"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/user_booked"
+        android:layout_below="@+id/expiry"
+        android:layout_alignParentEnd="true"/>
+
+    <TextView
+        android:id="@+id/type"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/user_name"
+        android:layout_below="@+id/email"
+        android:layout_alignParentStart="true"/>
+
+</RelativeLayout>
