@@ -1,0 +1,127 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+                xmlns:tools="http://schemas.android.com/tools"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:gravity="center_horizontal"
+                android:orientation="vertical"
+                android:paddingBottom="@dimen/activity_vertical_margin"
+                android:paddingLeft="@dimen/activity_horizontal_margin"
+                android:paddingRight="@dimen/activity_horizontal_margin"
+                android:paddingTop="@dimen/activity_vertical_margin"
+                tools:context=".login.LoginActivity">
+
+    <Button
+        android:id="@+id/guest_button"
+        style="?android:textAppearanceSmall"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/action_guest"
+        android:textStyle="bold"
+        android:onClick="attemptGuest"
+        android:layout_below="@+id/auto_login"
+        android:layout_alignEnd="@+id/password"/>
+
+    <Button
+        android:id="@+id/email_register_button"
+        style="?android:textAppearanceSmall"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/action_register"
+        android:textStyle="bold"
+        android:onClick="attemptRegister"
+        android:layout_alignTop="@+id/email_sign_in_button"
+        android:layout_alignEnd="@+id/auto_login"/>
+
+    <Button
+        android:id="@+id/email_sign_in_button"
+        style="?android:textAppearanceSmall"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/action_sign_in"
+        android:textStyle="bold"
+        android:onClick="attemptLogin"
+        android:layout_below="@+id/auto_login"
+        android:layout_alignParentStart="true"/>
+
+    <Button
+        android:id="@+id/forgot_password_button"
+        style="?android:textAppearanceSmall"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/forgot_pass"
+        android:textStyle="bold"
+        android:onClick="goToForgotPasswordActivity"
+        android:layout_below="@+id/email_register_button"
+        android:layout_alignParentStart="true"
+        android:layout_alignEnd="@+id/auto_login"/>
+
+    <CheckBox
+        android:id="@+id/auto_login"
+        style="?android:textAppearanceSmall"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/auto_login"
+        android:checked="false"
+        android:textStyle="bold"
+        android:layout_centerVertical="true"
+        android:layout_alignParentStart="true"/>
+
+    <CheckBox
+        android:id="@+id/remember_username"
+        style="?android:textAppearanceSmall"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/remember_username"
+        android:checked="false"
+        android:textStyle="bold"
+        android:layout_above="@+id/auto_login"
+        android:layout_alignParentStart="true"/>
+
+    <EditText
+        android:id="@+id/password"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="@string/prompt_password"
+        android:inputType="textPassword"
+        android:maxLines="1"
+        android:singleLine="true"
+        android:layout_above="@+id/remember_username"
+        android:layout_alignParentEnd="true"
+        android:layout_marginBottom="59dp"/>
+
+    <EditText
+        android:id="@+id/email"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="@string/prompt_email"
+        android:inputType="textEmailAddress"
+        android:maxLines="1"
+        android:singleLine="true"
+        android:layout_above="@+id/password"
+        android:layout_alignParentEnd="true"/>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceLarge"
+        android:text="@string/app_name"
+        android:typeface="serif"
+        android:id="@+id/textView2"
+        android:layout_centerHorizontal="true"
+        android:textSize="40sp"
+        android:textStyle="bold|italic"
+        android:textIsSelectable="true"/>
+
+    <Button
+        style="?android:textAppearanceSmall"
+        android:id="@+id/button"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/exit"
+        android:textStyle="bold"
+        android:onClick="exit"
+        android:layout_alignTop="@+id/forgot_password_button"
+        android:layout_alignParentEnd="true"
+        android:layout_alignStart="@+id/guest_button"/>
+
+</RelativeLayout>

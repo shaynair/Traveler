@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="CheckStyle-IDEA">
+    <option name="configuration">
+      <map>
+        <entry key="active-configuration" value="PROJECT_RELATIVE:$PRJ_DIR$/google_checks.xml:Google" />
+        <entry key="check-nonjava-files" value="false" />
+        <entry key="check-test-classes" value="false" />
+        <entry key="location-0" value="PROJECT_RELATIVE:$PRJ_DIR$/google_checks.xml:Google" />
+        <entry key="location-1" value="CLASSPATH:/sun_checks.xml:The default Checkstyle rules" />
+        <entry key="suppress-errors" value="true" />
+        <entry key="thirdparty-classpath" value="C:\Users\Akshay\Documents\School\University 2\checkstyle-addons-1.3.2.jar" />
+      </map>
+    </option>
+  </component>
+</project>

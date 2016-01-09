@@ -1,0 +1,211 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+                xmlns:tools="http://schemas.android.com/tools"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:paddingLeft="@dimen/activity_horizontal_margin"
+                android:paddingRight="@dimen/activity_horizontal_margin"
+                android:paddingTop="@dimen/activity_vertical_margin"
+                android:paddingBottom="@dimen/activity_vertical_margin"
+                tools:context=".login.RegisterActivity">
+
+    <ScrollView
+        android:id="@+id/register_form"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:fillViewport="true">
+
+        <RelativeLayout
+            android:id="@+id/in_register_form"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <CheckedTextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/name_help"
+                android:id="@+id/r_checkedTextView"
+                android:checked="false"
+                android:layout_alignParentTop="true"
+                android:layout_alignParentStart="true"/>
+
+            <EditText
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:inputType="textPersonName"
+                android:hint="@string/name_def"
+                android:ems="10"
+                android:maxLines="1"
+                android:singleLine="true"
+                android:id="@+id/r_editText"
+                android:layout_below="@+id/r_checkedTextView"
+                android:layout_alignParentStart="true"
+                android:layout_alignParentEnd="true"/>
+
+            <CheckedTextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/last_help"
+                android:id="@+id/r_checkedTextView2"
+                android:layout_below="@+id/r_editText"
+                android:layout_alignParentStart="true"
+                android:checked="false"/>
+
+            <EditText
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:inputType="textEmailAddress"
+                android:ems="10"
+                android:maxLines="1"
+                android:singleLine="true"
+                android:id="@+id/r_editText2"
+                android:layout_below="@+id/r_checkedTextView5"
+                android:layout_alignParentStart="true"
+                android:layout_alignEnd="@+id/r_editText5"
+                android:hint="@string/email_def"/>
+
+            <CheckedTextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/pass_help"
+                android:id="@+id/r_checkedTextView3"
+                android:checked="false"
+                android:layout_below="@+id/r_editText2"
+                android:layout_alignParentStart="true"/>
+
+            <EditText
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:inputType="textPassword"
+                android:ems="10"
+                android:maxLines="1"
+                android:singleLine="true"
+                android:hint="@string/pass_def"
+                android:id="@+id/r_editText3"
+                android:layout_below="@+id/r_checkedTextView3"
+                android:layout_alignParentStart="true"
+                android:layout_alignEnd="@+id/r_editText2"/>
+
+            <CheckedTextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/cpass_help"
+                android:id="@+id/r_checkedTextView4"
+                android:layout_below="@+id/r_editText3"
+                android:layout_alignParentStart="true"
+                android:checked="false"/>
+
+            <EditText
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:inputType="textPassword"
+                android:ems="10"
+                android:maxLines="1"
+                android:singleLine="true"
+                android:hint="@string/cpass_def"
+                android:id="@+id/r_editText4"
+                android:layout_below="@+id/r_checkedTextView4"
+                android:layout_alignParentStart="true"
+                android:layout_alignEnd="@+id/r_editText3"/>
+
+            <CheckedTextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/email_help"
+                android:id="@+id/r_checkedTextView5"
+                android:checked="false"
+                android:layout_below="@+id/r_editText5"
+                android:layout_alignParentStart="true"/>
+
+            <EditText
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:inputType="textPersonName"
+                android:hint="@string/last_def"
+                android:ems="10"
+                android:maxLines="1"
+                android:singleLine="true"
+                android:id="@+id/r_editText5"
+                android:layout_below="@+id/r_checkedTextView2"
+                android:layout_alignParentStart="true"
+                android:layout_alignEnd="@+id/r_editText"/>
+
+            <CheckedTextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/address_help"
+                android:id="@+id/r_checkedTextView6"
+                android:layout_below="@+id/r_editText4"
+                android:layout_alignParentStart="true"
+                android:checked="false"/>
+
+            <EditText
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:inputType="textPostalAddress"
+                android:ems="10"
+                android:maxLines="1"
+                android:singleLine="true"
+                android:id="@+id/r_editText6"
+                android:layout_below="@+id/r_checkedTextView6"
+                android:layout_alignParentStart="true"
+                android:layout_alignEnd="@+id/r_editText4"
+                android:hint="@string/address_def"/>
+
+            <CheckedTextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/cc_help"
+                android:id="@+id/r_checkedTextView7"
+                android:layout_below="@+id/r_editText6"
+                android:layout_alignParentStart="true"
+                android:checked="false"/>
+
+            <EditText
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/r_editText7"
+                android:maxLines="1"
+                android:singleLine="true"
+                android:layout_below="@+id/r_checkedTextView7"
+                android:layout_alignParentStart="true"
+                android:layout_alignEnd="@+id/r_editText6"
+                android:hint="@string/cc_def"/>
+
+            <CheckedTextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/expiry_help"
+                android:id="@+id/r_checkedTextView8"
+                android:layout_below="@+id/r_editText7"
+                android:layout_alignParentStart="true"
+                android:checked="false"/>
+
+            <EditText
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:inputType="date"
+                android:ems="10"
+                android:maxLines="1"
+                android:singleLine="true"
+                android:id="@+id/r_editText8"
+                android:layout_below="@+id/r_checkedTextView8"
+                android:layout_alignParentStart="true"
+                android:layout_alignEnd="@+id/r_editText7"
+                android:hint="@string/expiry_def"/>
+
+            <Button
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/register_submit"
+                android:id="@+id/r_button"
+                android:onClick="submit"
+                android:layout_below="@+id/r_editText8"
+                android:layout_alignParentBottom="true"
+                android:layout_alignParentStart="true"
+                android:layout_alignEnd="@+id/r_editText8"/>
+
+        </RelativeLayout>
+    </ScrollView>
+
+</RelativeLayout>

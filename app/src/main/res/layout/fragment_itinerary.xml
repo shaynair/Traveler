@@ -1,0 +1,71 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools" android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    tools:context=".view.ItineraryFragment">
+
+    <Space
+        android:id="@+id/space_1"
+        android:layout_width="1dp"
+        android:layout_height="20dp"
+        />
+
+    <TextView
+        android:id="@+id/email"
+        android:text="@string/vst_origin"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceMedium"
+        android:layout_alignParentStart="true"/>
+
+    <TextView
+        android:id="@+id/destination"
+        android:text="@string/vst_destination"
+        android:layout_width="fill_parent"
+        android:gravity="end"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceMedium"
+        android:layout_above="@+id/start_date_time"
+        android:layout_alignParentEnd="true"/>
+
+    <TextView
+        android:id="@+id/start_date_time"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/vst_start_date_time"
+        android:layout_below="@+id/email"/>
+
+    <TextView
+        android:id="@+id/arrival_date_time"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/vst_arrival_date_time"
+        android:layout_below="@+id/start_date_time"
+        android:layout_alignParentStart="true"
+        android:layout_alignEnd="@+id/start_date_time"/>
+
+    <Space
+        android:id="@+id/space_2"
+        android:layout_width="1dp"
+        android:layout_height="20dp"
+        android:layout_below="@+id/start_date_time"/>
+
+    <TextView
+        android:id="@+id/cost"
+        android:text="@string/vst_cost"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/travel_time"
+        android:layout_alignParentEnd="true"/>
+
+    <TextView
+        android:id="@+id/travel_time"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/vst_travel_time"
+        android:layout_below="@+id/destination"
+        android:layout_alignEnd="@+id/destination"/>
+
+</RelativeLayout>
